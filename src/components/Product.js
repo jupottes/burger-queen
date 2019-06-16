@@ -1,21 +1,24 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import './product.css';
-class Product extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+// import './product.css';
 
-  render() {
-    return (
-      <div className="Product">
-        <header className="Product-header">
-          <h1>Café americano R$ 5,00</h1>
-        </header>
-      </div>
-    );
-  }
+// function() {
+//     const Product = (props) => {
+//     return( <li>
+//         <span>name: {props.chirldren}, age: {props.preco}</span>
+//     </li>
+// }
+// }
+
+class Product extends React.Component {
+
+    render() {
+        return (
+            <div><li>
+                <span>Amor</span>
+            </li></div>
+        );
+    }
 }
+
 
 export default Product;

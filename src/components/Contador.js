@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './button'
+import './contador.css';
 
 class Contador extends React.Component {
   constructor(props) {
@@ -29,9 +30,8 @@ class Contador extends React.Component {
     return (
       <section>
         <div id="contador" className="App">
-        <h1 className="produtos">Hamburguer</h1>
           <Button text="-" onClick={this.decrementar.bind(this)} />
-          <h1 className="quant">{this.state.contador}</h1>
+          <h3 className="quant">{this.state.contador}</h3>
           <Button text="+" onClick={this.incrementar.bind(this)} />
         </div>
       </section >

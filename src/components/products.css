@@ -18,3 +18,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.description {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
