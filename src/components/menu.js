@@ -1,15 +1,14 @@
 import React from 'react';
-import Cafedamanha from './cafedamanha';
-import Almocoejantar from './almocoejantar';
 import './menu.css';
+import NavBar from './NavBar'
+import Menu1 from './menu1';
 
 class Menu extends React.Component {
 
     render() {
         return (
-            <div>
-
-                <div className="topologo">
+            <div className="container col-12">
+                <div>
                     <div className="topo">
                         <h1>BURGUER QUEEN</h1>
                     </div>
@@ -17,41 +16,24 @@ class Menu extends React.Component {
 
                 <div className="menu-manha">
                     <div>
-                        <h1 className="title">CAFÉ DA MANHÃ</h1>
+                        <NavBar />
                     </div>
                     <div className="products">
-                        <Cafedamanha />
-                    </div>
-                </div>
-
-                <div className="menu-tarde">
-                    <div>
-                        <h1 className="title">ALMOÇO E JANTAR</h1>
-                    </div>
-                    <div className="products">
-                        <Almocoejantar />
+                        <Menu1 />
                     </div>
                 </div>
 
                 <div className="dados">
-                    <div className="title">
-                        <h5>Observações</h5>
-                        <input></input>
-                        <h5>Nome Cliente</h5>
-                        <input></input>
-                    </div>
+
                 </div>
 
                 <div className="footter">
-                    <div className="topo">
-                        <h1>MENU</h1>
-                    </div>
+
                 </div>
 
             </div>
         );
     }
 }
-
 
 export default Menu;
